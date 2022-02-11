@@ -51,13 +51,18 @@ Distortions are applied to 2 sets from the MS-COCO 2017 dataset: the train (118K
 Paths to directories from the main script need to be modified in order to indicate the correct paths for the image source, the annotations sources and the desired output directories.
 
     %% Paths to directories
+    %Path to validation set images from COCO 2017
     imgval_path='C:\Users\beghd\OneDrive\Bureau\Dataset\COCO\val2017';
+    %Path to validation set annotations from COCO 2017
     path_annotation =('C:\Users\beghd\OneDrive\Bureau\Dataset\COCO\annotations_unpacked_valfull2017\matFiles');
-    outputFolder=('C:\Users\beghd\OneDrive\Bureau\Dataset\COCO\val2017_d/');
+    %Path to output directory where distortions are generated
+    outputFolder=('C:\Users\beghd\OneDrive\Bureau\Dataset\COCO\val2017_d1/');
+    %Path to the rain masks to apply for the rain distortion
     rainFolder=('C:\Users\beghd\OneDrive\Bureau\Distortions\video extraction\rain5/');
+    %Path to the haze masks to apply for the haze distortion
     hazeFolder=('C:\Users\beghd\OneDrive\Bureau\Distortions\video extraction\fog1/');
     
-To generate the desired distortion, comment or uncomment lines of function in the "main.m" script:
+To generate the desired distortion, comment or uncomment the lines of functions in the "main.m" script:
 
     %% Call of functions
     dist_defocus(imgval_path,path_annotation,outputFolder);
@@ -70,6 +75,22 @@ To generate the desired distortion, comment or uncomment lines of function in th
     dist_compression(imgval_path,path_annotation,outputFolder);
     dist_contraste(imgval_path,path_annotation,outputFolder);
     dist_noise(imgval_path,path_annotation,outputFolder);
+    
+The distorted images are  as the following tree structure:    
+    ```
+  outputFolder: path given in the main script that described the output folder
+  ├── noise
+      └── Level 1 of distortion (value)
+      ...
+      ...
+      └── Level 10 of distortion (value)
+  ├── Next distortion  
+      └── Level 1 of distortion (value)
+      ...
+      ...
+      └── Level 10 of distortion (value)
+  ...    
+  ```
     
     
 Evaluation results
