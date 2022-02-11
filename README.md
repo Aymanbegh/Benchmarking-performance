@@ -39,8 +39,39 @@ Distortions are applied to 2 sets from the MS-COCO 2017 dataset: the train (118K
   ├── list.txt
   ```
   
-- **Validation set**:
+- **Validation set**: We apply the 10 types of distortions on all images from the validation set of MS-COCO (5K images) through 10 distortion levels specified in each respective generation function ("distortion_*distortion_name*.m"). The values of distortions are giver directly in each specific distortion function ("dist_*distortion_name*.m"). All of these functions are in the following tree structure:
 
+    ```
+  Distortions_validation
+  ├── Distortions functions
+      └──distortion_*distortion_name*.m : function that generate the distortion specified by *distortion_name*
+  ├── dist_*distortion_name*.m: functions that call each respective functions in the folder "Distortions functions" 
+  ├── main.m: main script that calls all dist_*distortion_name*.m functions
+  ```
+Paths to directories from the main script need to be modified in order to indicate the correct paths for the image source, the annotations sources and the desired output directories.
+
+    %% Paths to directories
+    imgval_path='C:\Users\beghd\OneDrive\Bureau\Dataset\COCO\val2017';
+    path_annotation =('C:\Users\beghd\OneDrive\Bureau\Dataset\COCO\annotations_unpacked_valfull2017\matFiles');
+    outputFolder=('C:\Users\beghd\OneDrive\Bureau\Dataset\COCO\val2017_d/');
+    rainFolder=('C:\Users\beghd\OneDrive\Bureau\Distortions\video extraction\rain5/');
+    hazeFolder=('C:\Users\beghd\OneDrive\Bureau\Distortions\video extraction\fog1/');
+    
+To generate the desired distortion, comment or uncomment lines of function in the "main.m" script:
+
+    %% Call of functions
+    dist_defocus(imgval_path,path_annotation,outputFolder);
+    dist_haze(imgval_path,path_annotation,outputFolder,hazeFolder);
+    dist_motion(imgval_path,path_annotation,outputFolder);
+    dist_rain(imgval_path,path_annotation,outputFolder,rainFolder);
+    dist_object_motion(imgval_path,path_annotation,outputFolder);
+    dist_object_illum(imgval_path,path_annotation,outputFolder);
+    dist_object_defocus(imgval_path,path_annotation,outputFolder);
+    dist_compression(imgval_path,path_annotation,outputFolder);
+    dist_contraste(imgval_path,path_annotation,outputFolder);
+    dist_noise(imgval_path,path_annotation,outputFolder);
+    
+    
 Evaluation results
 -----------------------------------
 
