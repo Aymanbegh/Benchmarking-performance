@@ -76,7 +76,8 @@ To generate the desired distortion, comment or uncomment the lines of functions 
     dist_contraste(imgval_path,path_annotation,outputFolder);
     dist_noise(imgval_path,path_annotation,outputFolder);
     
-The distorted images are  as the following tree structure:    
+The distorted images are  as the following tree structure:   
+
     ```
   outputFolder: path given in the main script that described the output folder
   ├── noise
