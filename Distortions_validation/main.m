@@ -1,0 +1,10 @@
+dist_defocus();
+dist_haze();
+dist_motion();
+dist_rain();
+dist_object_motion();
+dist_object_illum();
+dist_object_defocus();
+dist_compression();
+dist_contraste();
+dist_noise();
