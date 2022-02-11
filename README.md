@@ -27,18 +27,7 @@ Requirements
 
 Distorted dataset generation
 -----------------------------------
-Distortions are applied to 2 sets from the MS-COCO 2017 dataset: the train (118K images) and validation (5K images) sets
-- **Train set**: we applied distortions through 5% of the contained images for each of the 10 distortion types (5.9K images per distortion type). The values of distortions have been randomly chosen in intervals specific to each distortion type. The functions to generate these distortions are structured as following:
-
-    ```
-  *Distortion_name*
-  ├── annotations
-      └──instances_*distortion_name*.json
-  │── images
-      └── ****.jpg
-  ├── list.txt
-  ```
-  
+Distortions are applied to 2 sets from the MS-COCO 2017 dataset: the train (118K images) and validation (5K images) sets 
 - **Validation set**: We apply the 10 types of distortions on all images from the validation set of MS-COCO (5K images) through 10 distortion levels specified in each respective generation function ("distortion_*distortion_name*.m"). The values of distortions are giver directly in each specific distortion function ("dist_*distortion_name*.m"). All of these functions are in the following tree structure:
 
     ```
@@ -78,22 +67,31 @@ To generate the desired distortion, comment or uncomment the lines of functions 
     
 The distorted images are  as the following tree structure:   
 
+      ```
+      outputFolder: path given in the main script that described the output folder
+      ├── noise
+          └── Level 1 of distortion (value)
+          ...
+          ...
+          └── Level 10 of distortion (value)
+      ├── Next distortion  
+          └── Level 1 of distortion (value)
+          ...
+          ...
+          └── Level 10 of distortion (value)   
+         ```  
+         
+- **Train set**: we applied distortions through 5% of the contained images for each of the 10 distortion types (5.9K images per distortion type). The values of distortions have been randomly chosen in intervals specific to each distortion type. The functions to generate these distortions are structured as following:
+
     ```
-  outputFolder: path given in the main script that described the output folder
-  ├── noise
-      └── Level 1 of distortion (value)
-      ...
-      ...
-      └── Level 10 of distortion (value)
-  ├── Next distortion  
-      └── Level 1 of distortion (value)
-      ...
-      ...
-      └── Level 10 of distortion (value)
-  ...    
+  *Distortion_name*
+  ├── annotations
+      └──instances_*distortion_name*.json
+  │── images
+      └── ****.jpg
+  ├── list.txt
   ```
-    
-    
+      
 Evaluation results
 -----------------------------------
 
