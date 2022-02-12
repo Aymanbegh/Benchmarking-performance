@@ -110,8 +110,8 @@ Evaluation results
 We provide many additional files to perform the robustness evaluation against distortions of models **Mask-RCNN, EfficientDet, and YOLOv4**.
 
 ![image](https://user-images.githubusercontent.com/80038451/153692059-956103b7-b838-4556-992a-664a6ff0ff09.png)
+![image](https://user-images.githubusercontent.com/80038451/153705754-eddfc374-9100-4581-ad36-26071f78026d.png)
 
-![image](https://user-images.githubusercontent.com/80038451/153692180-4b0a591d-6737-4568-bb1e-33d4ef4fd751.png)
 
 
 Training results
