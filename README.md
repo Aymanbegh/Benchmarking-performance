@@ -5,7 +5,7 @@ Here is an original strategy of image distortion generation applied to the MS-CO
 Overview
 -----------------------------------
 
-We propose this full framework evaluation of robustness for a set of object detection methods (Mask-RCNN, EfficientDet, and YOLOv4) through several distortions applied on the MS-COCO dataset. This data augmentation is performed through some common global distortions (noise, motion blur, defocus blur, haze, rain, contrast change, and compression artefacts) in the whole image and some local distortions (object blur, backlight illumination BI and object defocus blur) in specific areas that include the possible dynamic objects or scene conditions.
+We propose this full framework evaluation of robustness for a set of object detection methods (**Mask-RCNN, EfficientDet, and YOLOv4**) through several distortions applied on the MS-COCO dataset. This data augmentation is performed through some common global distortions (noise, motion blur, defocus blur, haze, rain, contrast change, and compression artefacts) in the whole image and some local distortions (object blur, backlight illumination BI and object defocus blur) in specific areas that include the possible dynamic objects or scene conditions.
 The main contributions are:
 - A new dataset dedicated to the study of the impact of local and global distortions on the robustness of object detection is built from the MS-COCO dataset (see Distorted dataset generation).
 - A comprehensive evaluation of the robustness of the state-of-the-art object detection methods against global and local distortions at 10 levels of distortion (see Evaluation).
@@ -23,11 +23,15 @@ Image Distortions
 
 Requirements
 -----------------------------------
-
+- MATLAB
+- MS-COCO dataset: validation and train sets (corresponding images and instances annotations => https://cocodataset.org/#download )
+- Instances annotations converted in a Matlab matrix: (train set)/  (validation set)
+- Requirements for the models to evaluate
 
 Distorted dataset generation
 -----------------------------------
-Distortions are applied to 2 sets from the MS-COCO 2017 dataset: the train (118K images) and validation (5K images) sets 
+Distortions are applied to 2 sets from the MS-COCO 2017 dataset: the train (118K images) and validation (5K images) sets. 
+**You generate yourself your COCO distorted dataset for the train and evaluation sets thanks to the following functions. Otherwise, you can download directly download our distorted dataset: (train set: GB) and (validation set: GB)**
 - **Validation set**: We apply the 10 types of distortions on all images from the validation set of MS-COCO (5K images) through 10 distortion levels specified in each respective generation function ("distortion_*distortion_name*.m"). The values of distortions are giver directly in each specific distortion function ("dist_*distortion_name*.m"). All of these functions are in the following tree structure:
 
     ```
@@ -81,19 +85,33 @@ The distorted images are  as the following tree structure:
           └── Level 10 of distortion (value)   
          ```  
          
-- **Train set**: we applied distortions through 5% of the contained images for each of the 10 distortion types (5.9K images per distortion type). The values of distortions have been randomly chosen in intervals specific to each distortion type. The functions to generate these distortions are structured as following:
+- **Train set**: we applied distortions through 5% of the contained images for each of the 10 distortion types (5.9K images per distortion type). The values of distortions have been randomly chosen in intervals specific to each distortion type. The functions to generate these distortions are similarly structured to the previous:
 
     ```
-  *Distortion_name*
-  ├── annotations
-      └──instances_*distortion_name*.json
-  │── images
-      └── ****.jpg
-  ├── list.txt
+  Distortions_train
+  ├── Distortions functions
+      └──distortion_*distortion_name*.m : function that generate the distortion specified by *distortion_name*
+  ├── main_distortion_application.m : main script that calls all dist_*distortion_name*.m functions and assigns the distortion type to images
   ```
+  
+  You need to modify the different paths listed below in the main script according to your folders structure:
+  
+        - imgtrain_path (line 20): path directory of the train set containing images
+        - imgtrain_dist (line 27): where to generate the distorted train set
+        - path_annotation (line 36): path directory of the train set containing annotations
+        - hazeFolder (line 39): path directory containing the haze images source
+        - rainFolder (line 41): path directory containing the rain images source
+        - outputFolder (line 45): as imgtrain_dist
+
       
 Evaluation results
 -----------------------------------
+
+We provide many additional files to perform the robustness evaluation against distortions of models **Mask-RCNN, EfficientDet, and YOLOv4**.
+
+![image](https://user-images.githubusercontent.com/80038451/153692059-956103b7-b838-4556-992a-664a6ff0ff09.png)
+
+![image](https://user-images.githubusercontent.com/80038451/153692180-4b0a591d-6737-4568-bb1e-33d4ef4fd751.png)
 
 
 Training results
