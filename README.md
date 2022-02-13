@@ -120,12 +120,13 @@ Training results
 -----------------------------------
 
 ![image](https://user-images.githubusercontent.com/80038451/153755895-5503f06a-9465-4267-b3c9-e4df9f794dd7.png)
+<p align="center">
 ![image](https://user-images.githubusercontent.com/80038451/153755924-b7496789-4b34-46f8-92f9-a5e4379f28ab.png)
-
+</p>
 Previous graphics are summarized in the following table to highlight the impact of data augmentation on robustness for each specific distortions:
 
 | | Noise| Contrast| Compression | Rain  | Haze |Blur | Defocus  | Local Blur | Local Defocus | Backlight illumination   | 
-| ------ | ------ | ------ | ------ |  ------ | ------ | ------ | ------ |  ------ | ------ | ------ | 
+| ------ | :------: | :------: | :------: |  :------: | :------: | :------: | :------: |  :------: | :------: | :------: | 
 | **Average** | 47.2% | 1.99% | 4.26%  | 61.7% | 15.8% | 86.3% | 16.5% | 39.8% | 17.2% | 24.1%|
 
 The global average improvement reaches 31.5%. 
