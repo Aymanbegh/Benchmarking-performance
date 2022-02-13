@@ -117,7 +117,7 @@ We provide many additional files to perform the robustness evaluation against di
 Training results
 -----------------------------------
 
-
-![image](https://user-images.githubusercontent.com/80038451/153755578-f0d5196e-a522-4e9f-b1e7-e41f1cf038fe.png)
+![image](https://user-images.githubusercontent.com/80038451/153755895-5503f06a-9465-4267-b3c9-e4df9f794dd7.png)
+![image](https://user-images.githubusercontent.com/80038451/153755924-b7496789-4b34-46f8-92f9-a5e4379f28ab.png)
 
 
