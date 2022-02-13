@@ -32,7 +32,7 @@ Distorted dataset generation
 -----------------------------------
 Distortions are applied to 2 sets from the MS-COCO 2017 dataset: the train (118K images) and validation (5K images) sets. 
 **You generate yourself your COCO distorted dataset for the train and evaluation sets thanks to the following functions. Otherwise, you can download directly download our distorted dataset: (train set: GB) and (validation set: GB)**
-- **Validation set**: We apply the 10 types of distortions on all images from the validation set of MS-COCO (5K images) through 10 distortion levels specified in each respective generation function ("distortion_*distortion_name*.m"). The values of distortions are giver directly in each specific distortion function ("dist_*distortion_name*.m"). All of these functions are in the following tree structure:
+- **Validation set**: We apply the 10 types of distortions on all images from the validation set of MS-COCO (5K images) through 10 distortion levels specified in each respective generation function ("distortion_*distortion_name*.m"). The values of distortions are giver directly in each specific distortion function ("dist_*distortion_name*.m"). All of these functions, present in the **Distortions_validation** folder, are in the following tree structure:
 
     ```
   Distortions_validation
@@ -85,7 +85,7 @@ The distorted images are  as the following tree structure:
           └── Level 10 of distortion (value)   
          ```  
          
-- **Train set**: we applied distortions through 5% of the contained images for each of the 10 distortion types (5.9K images per distortion type). The values of distortions have been randomly chosen in intervals specific to each distortion type. The functions to generate these distortions are similarly structured to the previous:
+- **Train set**: we applied distortions through 5% of the contained images for each of the 10 distortion types (5.9K images per distortion type). The values of distortions have been randomly chosen in intervals specific to each distortion type. The functions to generate these distortions, present in the **Distortions_train** folder, are similarly structured to the previous:
 
     ```
   Distortions_train
