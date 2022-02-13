@@ -118,11 +118,10 @@ We provide many additional files to perform the robustness evaluation against di
 
 Training results
 -----------------------------------
+Training experiments done with the YOLOv4-tiny model on GPU RTX 2080 SUPER. Find all dependencies to train your model with our distorted train set here:
 
 ![image](https://user-images.githubusercontent.com/80038451/153755895-5503f06a-9465-4267-b3c9-e4df9f794dd7.png)
-<p align="center">
 ![image](https://user-images.githubusercontent.com/80038451/153755924-b7496789-4b34-46f8-92f9-a5e4379f28ab.png)
-</p>
 Previous graphics are summarized in the following table to highlight the impact of data augmentation on robustness for each specific distortions:
 
 | | Noise| Contrast| Compression | Rain  | Haze |Blur | Defocus  | Local Blur | Local Defocus | Backlight illumination   | 
