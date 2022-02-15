@@ -23,20 +23,23 @@ Image Distortions
 
 Requirements
 -----------------------------------
-- MATLAB R2021a
-- Python (tested with Pyhton 3.8)
-- MS-COCO dataset: validation and train sets (corresponding images and instances annotations)
+- **MATLAB R2021a**
+- **Python (tested with Pyhton 3.8)**
+- **MS-COCO dataset: validation and train sets (corresponding images and instances annotations)**
     - https://cocodataset.org/#download  
-- Instances annotations converted in a Matlab matrix: 
-    - (train set): https://drive.google.com/file/d/1vduixQEHJxMvdU0kaJ8GtiLkeqPE7i2L/view?usp=sharing
-    - (validation set): https://drive.google.com/file/d/1yqHBH7kJfBWh7uG_r40P507wYWXdnjOy/view?usp=sharing
-- Generated distorted datasets (if you dont want to generate them yourself):
-    - (train set): https://drive.google.com/file/d/1-oNNJUwfXOlM222g84t6ZM2U5GmbkUoo/view?usp=sharing
-    - (validation set): in 3 parts
+- **Instances annotations converted in a Matlab matrix:**
+    - **(train set):** https://drive.google.com/file/d/1vduixQEHJxMvdU0kaJ8GtiLkeqPE7i2L/view?usp=sharing
+    - **(validation set):** https://drive.google.com/file/d/1yqHBH7kJfBWh7uG_r40P507wYWXdnjOy/view?usp=sharing
+- **Generated distorted datasets (if you dont want to generate them yourself):**
+    - **(train set):** https://drive.google.com/file/d/1-oNNJUwfXOlM222g84t6ZM2U5GmbkUoo/view?usp=sharing
+    - **(validation set): 3 links**
         - part1 (Blur, Compression, Contrast, Defocus): https://drive.google.com/file/d/1EsljL-cN-DpUKmn9w02WbkJiFta4aDBB/view?usp=sharing
         - part2 (Noise): https://drive.google.com/file/d/1VBy1i37uCLYl3Ew5p2Qu0PVGck8f3r8s/view?usp=sharing
         - part3 (others): https://drive.google.com/file/d/1V6_5vXR5vnfMhyhspOW4lM75cAKh2Vk-/view?usp=sharing
-- Requirements for the models to evaluate
+- **Requirements for the models to evaluate**
+- **YOLOv4-tiny pre-trained:**
+    - Original COCO dataset: https://drive.google.com/drive/folders/10s4mmJ1rkWGwrhveU92-h3cb03wA0VfD?usp=sharing
+    - Distorted COCO Dataset: https://drive.google.com/drive/folders/18anC53sr_SkDl7qMPn9iWcM3ub1p6d1D?usp=sharing
 
 Distorted dataset generation
 -----------------------------------
