@@ -121,7 +121,8 @@ We provide many additional files to perform the robustness evaluation against di
 
 ![image](https://user-images.githubusercontent.com/80038451/154083675-382718b7-4437-4dd9-b2da-626ad41bc9d9.png)
 
-![image](https://user-images.githubusercontent.com/80038451/154083721-b9577b23-10c8-4661-b3c3-3337e586d544.png)
+
+![image](https://user-images.githubusercontent.com/80038451/154107306-3cb6642c-76a0-4628-a8c2-02b909e93c62.png)
 
 
 
