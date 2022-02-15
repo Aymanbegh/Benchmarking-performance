@@ -25,7 +25,8 @@ Requirements
 -----------------------------------
 - MATLAB
 - Python (tested with Pyhton 3.8)
-- MS-COCO dataset: validation and train sets (corresponding images and instances annotations => https://cocodataset.org/#download )
+- MS-COCO dataset: validation and train sets (corresponding images and instances annotations)
+    - https://cocodataset.org/#download  
 - Instances annotations converted in a Matlab matrix: 
     - (train set)
     -  (validation set) https://drive.google.com/drive/folders/1Jy6aWIQLnUNfzPhvNg9hRInfPFekNZD2
