@@ -7,9 +7,9 @@ Overview
 
 We propose this full framework evaluation of robustness for a set of object detection methods (**Mask-RCNN, EfficientDet, and YOLOv4**) through several distortions applied on the MS-COCO dataset. This data augmentation is performed through some common global distortions (noise, motion blur, defocus blur, haze, rain, contrast change, and compression artefacts) in the whole image and some local distortions (object blur, backlight illumination BI and object defocus blur) in specific areas that include the possible dynamic objects or scene conditions.
 The main contributions are:
-- A new dataset dedicated to the study of the impact of local and global distortions on the robustness of object detection is built from the MS-COCO dataset (see Distorted dataset generation).
-- A comprehensive evaluation of the robustness of the state-of-the-art object detection methods against global and local distortions at 10 levels of distortion (see Evaluation).
-- An evaluation of the training with distorted images impact on the robustness of YOLOv4-tiny model against synthetic distortions (see Training).
+- A new dataset dedicated to the study of the impact of local and global distortions on the robustness of object detection is built from the MS-COCO dataset (see **Distorted dataset generation** section).
+- A comprehensive evaluation of the robustness of the state-of-the-art object detection methods against global and local distortions at 10 levels of distortion (see **Evaluation** section).
+- An evaluation of the training with distorted images impact on the robustness of YOLOv4-tiny model against synthetic distortions (see **Training** section).
 
 
 Image Distortions
