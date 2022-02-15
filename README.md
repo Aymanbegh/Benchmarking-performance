@@ -138,7 +138,7 @@ Previous graphics are summarized in the following table to highlight the impact 
 | ------ | :------: | :------: | :------: |  :------: | :------: | :------: | :------: |  :------: | :------: | :------: | 
 | **Average** | 47.2% | 1.99% | 4.26%  | 61.7% | 15.8% | 86.3% | 16.5% | 39.8% | 17.2% | 24.1%|
 
-| Distortion| Distortion level  | mAP| 
+| Distortion <td colspan=5>Distortion level  <td colspan=1>mAP|
 |Type| 2  | 4 | 6 | 8 | 10 |Average | 
 | ------ | :------: | :------: | :------: |  :------: | :------: | :------: |
 | **Noise** | 9.58% | 22.3% |37.9% | 80.3% | 114% | 47.2% |
