@@ -26,7 +26,7 @@ Requirements
 - MATLAB
 - Python (tested with Pyhton 3.8)
 - MS-COCO dataset: validation and train sets (corresponding images and instances annotations => https://cocodataset.org/#download )
-- Instances annotations converted in a Matlab matrix: (train set)/ https://drive.google.com/drive/folders/1Jy6aWIQLnUNfzPhvNg9hRInfPFekNZD2 (validation set)
+- Instances annotations converted in a Matlab matrix: (train set)/ (validation set) https://drive.google.com/drive/folders/1Jy6aWIQLnUNfzPhvNg9hRInfPFekNZD2
 - Requirements for the models to evaluate
 
 Distorted dataset generation
