@@ -28,16 +28,16 @@ Requirements
 - MS-COCO dataset: validation and train sets (corresponding images and instances annotations)
     - https://cocodataset.org/#download  
 - Instances annotations converted in a Matlab matrix: 
-    - (train set)
-    -  (validation set) https://drive.google.com/drive/folders/1Jy6aWIQLnUNfzPhvNg9hRInfPFekNZD2
-- Generated distorted dataset (if you dont want to generate them yourself):
-    - link
-    - link
+    - (train set):
+    - (validation set): https://drive.google.com/drive/folders/1Jy6aWIQLnUNfzPhvNg9hRInfPFekNZD2
+- Generated distorted datasets (if you dont want to generate them yourself):
+    - (train set): 
+    - (validation set): 
 - Requirements for the models to evaluate
 
 Distorted dataset generation
 -----------------------------------
-Distortions are applied to 2 sets from the MS-COCO 2017 dataset: the train (118K images) and validation (5K images) sets. 
+Distortions are applied to 2 sets from the MS-COCO 2017 dataset => train (118K images) and validation (5K images) sets. 
 **You generate yourself your COCO distorted dataset for the train and evaluation sets thanks to the following functions. Otherwise, you can download directly download our distorted dataset: (train set: GB) and (validation set: GB)**
 - **Validation set**: We apply the 10 types of distortions on all images from the validation set of MS-COCO (5K images) through 10 distortion levels specified in each respective generation function ("distortion_*distortion_name*.m"). The values of distortions are giver directly in each specific distortion function ("dist_*distortion_name*.m"). All of these functions, present in the **Distortions_validation** folder, are in the following tree structure:
 
@@ -119,6 +119,9 @@ We provide many additional files to perform the robustness evaluation against di
 ![image](https://user-images.githubusercontent.com/80038451/153758154-73f7ab7a-2776-49b5-b40d-81404302af9f.png)
 ![image](https://user-images.githubusercontent.com/80038451/153758166-71744e78-0b90-4896-ac32-347fa12f2c6f.png)
 
+![image](https://user-images.githubusercontent.com/80038451/154083675-382718b7-4437-4dd9-b2da-626ad41bc9d9.png)
+
+![image](https://user-images.githubusercontent.com/80038451/154083721-b9577b23-10c8-4661-b3c3-3337e586d544.png)
 
 
 
