@@ -49,7 +49,7 @@ choice=1;
 % outputFolder=('C:\Users\beghd\OneDrive\Bureau\Dataset\COCO\val2017_d/');
 addpath(outputFolder);
 
-rainFolder=('C:\Users\beghd\OneDrive\Bureau\Distortions\video extraction\rain5/');
+%rainFolder=('C:\Users\beghd\OneDrive\Bureau\Distortions\video extraction\rain5/');
 addpath(rainFolder);
 
 outputHead = 'rain';
