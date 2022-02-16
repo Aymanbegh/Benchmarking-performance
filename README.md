@@ -1,4 +1,4 @@
-# Benchmarking-performance-of-object-detection-under-uncontrolled-environment
+# Benchmarking-performance-of-object-detection-under-images-distortions-of-an-uncontrolled-environment
 
 Here is an original strategy of image distortion generation applied to the MS-COCO dataset that combines some local and global distortions to reach a better realism. We have shown that training with this distorted dataset improves the robustness of models by 30% approximately. This repository is summarized as follow:
 - [Overview](https://github.com/Aymanbegh/Benchmarking-performance#overview): brief presentation of this framework evaluation of robustness
