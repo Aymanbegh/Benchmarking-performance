@@ -140,6 +140,14 @@ We provide many additional files to perform the robustness evaluation against di
         - val2017: contain path for the original validation set from MS-COCO => val2017.txt
         - val2017_$distortion_name$$level$: by exemple for the distortion noise of level 2 => val2017_noise2.txt 
         - **Change the path to images of eauc text file according to your directory** 
+        
+                By exemple for val2017_blur1.txt
+                /home/beghdadi/COCO/val2017_d/blur_motion/2.500000/000000182611.jpg
+                /home/beghdadi/COCO/val2017_d/blur_motion/2.500000/000000335177.jpg
+                To change:
+                /path_to/val2017_d/blur_motion/2.500000/000000182611.jpg
+                /path_to/val2017_d/blur_motion/2.500000/000000335177.jpg
+            
     - **COCO_CONFIG**: data file that contains all necessary information such as:
         
             classes= 80 => define number of class
