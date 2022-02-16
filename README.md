@@ -68,6 +68,7 @@ Distortions are applied to 2 sets from the MS-COCO 2017 dataset => train (118K i
   ├── dist_*distortion_name*.m: functions that call each respective functions in the folder "Distortions functions" 
   ├── main.m: main script that calls all dist_*distortion_name*.m functions
   ```
+**Download the Rain and Haze images sources to generate these distortion**: https://drive.google.com/drive/folders/1PDlCD63W8myRbsaJTRjwYBVlt8X2uwaA?usp=sharing  
 Paths to directories from the main script need to be modified in order to indicate the correct paths for the image source, the annotations sources and the desired output directories.
 
     %% Paths to directories
