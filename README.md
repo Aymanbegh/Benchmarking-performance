@@ -95,7 +95,7 @@ To generate the desired distortion, comment or uncomment the lines of functions 
     dist_contraste(imgval_path,path_annotation,outputFolder);
     dist_noise(imgval_path,path_annotation,outputFolder);
     
-The distorted images are  as the following tree structure:   
+The distorted images are as the following tree structure:   
 
       ```
       outputFolder: path given in the main script that described the output folder
@@ -135,7 +135,7 @@ Evaluation protocols
 
 We provide many additional files to perform the robustness evaluation against distortions of models **Mask-RCNN, EfficientDet, and YOLOv4**.
 - **YOLOv4/YOLOv4-tiny:** How to evaluate YOLO
-    - Download the darknet directory: https://github.com/AlexeyAB/darknet
+    - Download the darknet repository: https://github.com/AlexeyAB/darknet
     - Install the darknet executable into the darknet directory: https://pjreddie.com/darknet/install/
     - Copy and paste into the darknet directory our dependencies (cfg and img_dir folders, and python and shell files): https://drive.google.com/drive/folders/187RnbPSwFhEOH5k1E4LgrEDFuMOY4qEI?usp=sharing
     - Download the desired **MODEL** in paste it in the darknet directory (find it here): https://github.com/AlexeyAB/darknet#pre-trained-models
@@ -183,6 +183,12 @@ We provide many additional files to perform the robustness evaluation against di
         - **cfg/coco_comp1.data**: where "coco_comp1" is the data file that include path information of distorted images through compression 
 
 - **Mask-RCNN:** How to evaluate the Mask-RCNN model
+    - Download and extract repository from:  https://github.com/ahmedfgad/Mask-RCNN-TF2
+    - Follow installation instructions: https://github.com/ahmedfgad/Mask-RCNN-TF2#installation
+    - Download our dependencies and paste it into the mask-rcnn directory: https://drive.google.com/drive/folders/1P9JLeSzgsNDazkz0vtvgE5cST8Xs5Ezc?usp=sharing
+    - Run the following command:
+
+        python3 samples/coco/coco.py evaluate --dataset=/home/beghdadi/COCO/  --model=coco
 
 
 - **EfficientDet:** How to evaluate the EfficientDet model
