@@ -290,5 +290,15 @@ Previous graphics are summarized in the following table to highlight the impact 
 | **Average per level** | 4.11% | 17.9% |32.9% | 52.3% | 70.1% | 31.5% |
 
 
-The global average improvement reaches 31.5%. 
+In our case the global average improvement reaches 31.5%. 
+
+    
+    Citation
+-----------------------------------
+
+Use this BibTeX to cite this repository:
+
+
+
+Use this BibTeX to cite the corresponding paper:
 
