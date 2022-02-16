@@ -8,6 +8,7 @@ Here is an original strategy of image distortion generation applied to the MS-CO
 - [Evaluation protocols](https://github.com/Aymanbegh/Benchmarking-performance#evaluation-protocols): explains the evaluation protocol and how to launch it for each models (Mask-RCNN, EfficientDet and YOLOv4) 
 - [Evaluation results](https://github.com/Aymanbegh/Benchmarking-performance#evaluation-results): shows results of ours evaluations
 - [Training results](https://github.com/Aymanbegh/Benchmarking-performance#training-results): explains how to perform a training through YOLOv4 method (YOLOv4 or YOLOv4-tiny) and how to evaluate the robustness of the trained model.
+- [Citation](https://github.com/Aymanbegh/Benchmarking-performance#citation): BibTeX to cite this repository and the corresponding paper
 
 **Codes of evaluation and training tasks are fully provided as well as distorted dataset.**
 
