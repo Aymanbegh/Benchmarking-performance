@@ -293,7 +293,8 @@ Previous graphics are summarized in the following table to highlight the impact 
 In our case the global average improvement reaches 31.5%. 
 
     
-    Citation
+    
+Citation
 -----------------------------------
 
 Use this BibTeX to cite this repository:
