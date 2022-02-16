@@ -30,12 +30,15 @@ Requirements
 - **Instances annotations converted in a Matlab matrix:**
     - **(train set):** https://drive.google.com/file/d/1vduixQEHJxMvdU0kaJ8GtiLkeqPE7i2L/view?usp=sharing
     - **(validation set):** https://drive.google.com/file/d/1yqHBH7kJfBWh7uG_r40P507wYWXdnjOy/view?usp=sharing
+    - **(validation set MS-COCO 2014 for MASK-RCNN):** https://drive.google.com/file/d/1yqHBH7kJfBWh7uG_r40P507wYWXdnjOy/view?usp=sharing
 - **Generated distorted datasets (if you dont want to generate them yourself):**
     - **(train set):** https://drive.google.com/file/d/1-oNNJUwfXOlM222g84t6ZM2U5GmbkUoo/view?usp=sharing
-    - **(validation set): 3 links**
+    - **(validation set): 3 links for MS-COCO 2017**
         - part1 (Blur, Compression, Contrast, Defocus): https://drive.google.com/file/d/1EsljL-cN-DpUKmn9w02WbkJiFta4aDBB/view?usp=sharing
         - part2 (Noise): https://drive.google.com/file/d/1VBy1i37uCLYl3Ew5p2Qu0PVGck8f3r8s/view?usp=sharing
         - part3 (others): https://drive.google.com/file/d/1V6_5vXR5vnfMhyhspOW4lM75cAKh2Vk-/view?usp=sharing
+    - **(validation set 2014): MS-COCO 2014 for Mask-RCNN**
+        - Link: 
 - **Requirements for the models to evaluate**
 - **YOLOv4-tiny pre-trained:**
     - Original COCO dataset: https://drive.google.com/drive/folders/10s4mmJ1rkWGwrhveU92-h3cb03wA0VfD?usp=sharing
@@ -159,6 +162,7 @@ We provide many additional files to perform the robustness evaluation against di
             contains by exemple: ./darknet detector valid cfg/coco_comp1.data cfg/yolov4-tiny.cfg yolov4-tiny.weights
             
         - **cfg/coco_comp1.data**: where "coco_comp1" is the data file that include path information of distorted images through compression 
+
 - **Mask-RCNN:** How to evaluate the Mask-RCNN model
 
 
