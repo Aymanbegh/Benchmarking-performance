@@ -125,15 +125,15 @@ We provide many additional files to perform the robustness evaluation against di
     - Download the darknet directory: https://github.com/AlexeyAB/darknet
     - Install the darknet executable into the darknet directory: https://pjreddie.com/darknet/install/
     - Copy and paste into the darknet directory our dependencies (cfg and img_dir folders, and python and shell files): https://drive.google.com/drive/folders/187RnbPSwFhEOH5k1E4LgrEDFuMOY4qEI?usp=sharing
-    - Download the desired *MODEL* in paste it in the darknet directory (find it here): https://github.com/AlexeyAB/darknet#pre-trained-models
-    - Evaluation shell script for the selected *MODEL* and *COCO_CONFIG*: 
+    - Download the desired **MODEL** in paste it in the darknet directory (find it here): https://github.com/AlexeyAB/darknet#pre-trained-models
+    - Evaluation shell script for the selected **MODEL** and **COCO_CONFIG**: 
         
-            ./darknet detector valid cfg/*COCO_CONFIG*.data cfg/*MODEL*.cfg *MODEL*.weights
+            ./darknet detector valid cfg/**COCO_CONFIG**.data cfg/**MODEL**.cfg **MODEL**.weights
             python coco_eval.py $PATH_TO_INSTANCE_ANNOTATION$/instances_val2017.json ./results/coco_results.json bbox
         
-    - *MODEL*: choosen model (yolov4 or yolov4-tiny by exemple)
-    - $PATH_TO_INSTANCE_ANNOTATION$: path to the directory containing annotation from COCO
-    - *COCO_CONFIG*: data file that contains all necessary information such as:
+    - **MODEL**: choosen model (yolov4 or yolov4-tiny by exemple)
+    - **$PATH_TO_INSTANCE_ANNOTATION$**: path to the directory containing annotation from COCO
+    - **COCO_CONFIG**: data file that contains all necessary information such as:
         
             classes= 80 => define number of class
             train  = /path_to/train2017.txt  => give path to text file that contain path for each used images for training
