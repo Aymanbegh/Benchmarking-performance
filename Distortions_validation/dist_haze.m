@@ -48,7 +48,6 @@ choice=1;
 % outputFolder=('C:\Users\beghd\OneDrive\Bureau\Dataset\COCO\val2017_d/');
 addpath(outputFolder);
 
-
 addpath(hazeFolder);
 
 outputHead = 'haze';
