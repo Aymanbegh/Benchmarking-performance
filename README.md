@@ -199,7 +199,7 @@ We provide many additional files to perform the robustness evaluation against di
     - Create the "annotations" folder in the autml directory and paste "instances_val2017.json" and "captions_val2017.json" from MS-COCO dataset into it 
     - **Launch EfficientDet Evaluation for all distortion type and level**:
         - Modify the shell script "launch" to add yout directory configuration to indicate the **image_dir** path
-        - Run the following script:         ./launch.sh
+        - Run the following script: **./launch.sh**
          
 
 Evaluation results
@@ -216,8 +216,56 @@ To better assess the impact of distortion on models performance, here is on the 
 
 Training results
 -----------------------------------
+
 Training experiments are done with the YOLOv4-tiny model on GPU RTX 2080 SUPER. Find all dependencies to train your model with our distorted train set here:
-- 
+- Copy and paste into the darknet directory our dependencies (cfg, img_dir, and data folders): https://drive.google.com/drive/folders/187RnbPSwFhEOH5k1E4LgrEDFuMOY4qEI?usp=sharing
+- **coco2017_d**: files that contains annotation in txt format.
+    - link: https://drive.google.com/file/d/1O3TtciCbmqeq0M5FpkaSjqP_boXB9eR7/view?usp=sharing
+- **data folder**: folder that must contain information files to run training
+    - link: https://drive.google.com/drive/folders/1Wd0wcNEoeNcKaJs1M6BMPZUtFPQve8hv?usp=sharing
+- **pre-trained models**: instructions and pre-trained models to launch a costum training
+    - link: https://github.com/AlexeyAB/darknet#how-to-train-to-detect-your-custom-objects
+
+Protocol to launch a costum training:
+- Copy and paste files from the coco2017_d folder previously downloaded into the coco2017 folder from the data folder present in the darknet directory:
+
+      ```
+      ├── darknet
+          └── data
+            └── coco2017
+                └── paste here all files contain in the coco2017_d folder
+            └── coco2017.data    
+            ...
+            └── val2017.txt
+      ├── cfg 
+          └── 9k.labels
+          ...
+          └── yolo-voc.cfg
+      ├── img_dir
+          └── train2017.txt
+          ...
+          └── val2017_rain10.txt   
+         ```  
+         
+- Copy and paste python and shell files into the darknet directory : https://drive.google.com/drive/folders/187RnbPSwFhEOH5k1E4LgrEDFuMOY4qEI?usp=sharing
+- **To train your model on our distorted MS-COCO dataset:**
+    - Copy and paste images from our distorted MS-COCO 2017 training set (**see Requirements to download it**) into the coco2017 folder (in folder data)
+    - Copy and paste the desired **pre-trained models** in the darknet directory
+    - Modify the coco2017.data in the data folder as follow:
+
+        classes= 80
+        train  = /home/beghdadi/darknet/data/train2017_d.txt
+        valid  = /home/beghdadi/darknet/data/val2017.txt
+        #valid = data/coco_val_5k.list
+        names = data/coco2017.names
+        backup = /home/beghdadi/darknet/backup/
+        eval=coco
+        
+    - Select the desired models to train into the script **launch_traind** and run it as follow:
+            ./launch_traind.sh
+
+- **To train your model on the original MS-COCO dataset:**
+    - make the same process but copy paste the original MS-COCO 2017 training set instead of our distorted MS-COCO 2017 training set.
 
 Here, evaluation results of our trained models robustness against each distortion type and level.
 ![image](https://user-images.githubusercontent.com/80038451/153755895-5503f06a-9465-4267-b3c9-e4df9f794dd7.png)
