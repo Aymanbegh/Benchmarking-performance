@@ -1,13 +1,13 @@
 # Benchmarking-performance-of-object-detection-under-uncontrolled-environment
 
 Here is an original strategy of image distortion generation applied to the MS-COCO dataset that combines some local and global distortions to reach a better realism. We have shown that training with this distorted dataset improves the robustness of models by 30% approximately.
-    [Overview](https://github.com/Aymanbegh/Benchmarking-performance#overview): ezf
-    [Image Distortions](https://github.com/Aymanbegh/Benchmarking-performance#image-distortions): qzefq
-    [Requirements](https://github.com/Aymanbegh/Benchmarking-performance#requirements): zarzr
-    [Distorted dataset generation](https://github.com/Aymanbegh/Benchmarking-performance#distorted-dataset-generation): aefafe
-    [Evaluation protocols](https://github.com/Aymanbegh/Benchmarking-performance#evaluation-protocols): aefafe
-    [Evaluation results](https://github.com/Aymanbegh/Benchmarking-performance#evaluation-results): aefafe
-    [Training results](https://github.com/Aymanbegh/Benchmarking-performance#training-results): aefafe
+- [Overview](https://github.com/Aymanbegh/Benchmarking-performance#overview): ezf
+- [Image Distortions](https://github.com/Aymanbegh/Benchmarking-performance#image-distortions): qzefq
+- [Requirements](https://github.com/Aymanbegh/Benchmarking-performance#requirements): zarzr
+- [Distorted dataset generation](https://github.com/Aymanbegh/Benchmarking-performance#distorted-dataset-generation): aefafe
+- [Evaluation protocols](https://github.com/Aymanbegh/Benchmarking-performance#evaluation-protocols): aefafe
+- [Evaluation results](https://github.com/Aymanbegh/Benchmarking-performance#evaluation-results): aefafe
+- [Training results](https://github.com/Aymanbegh/Benchmarking-performance#training-results): aefafe
 
 
 
