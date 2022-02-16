@@ -287,7 +287,7 @@ Previous graphics are summarized in the following table to highlight the impact 
 | **Loc. MBlur** | 10.3% | 31.6% |46.9% | 59.3% | 67.0% | 39.8% |
 | **Loc. Defoc.** | 3.08% | 16.0% |23.3% | 25.5% | 25.9% | 17.2% |
 | **BAckLit** | 1.45% | 5.85% |19.1% | 40.3% | 76.8% | 24.1% |
-| **Average per level** | 4.11% | 17.9% |32.9% | 52.3% | 70.1% | 31.5% |
+| **Average per level** | 4.11% | 17.9% |32.9% | 52.3% | 70.1% | **31.5%** |
 
 
 In our case the global average improvement reaches 31.5%. 
