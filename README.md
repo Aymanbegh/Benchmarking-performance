@@ -124,7 +124,14 @@ We provide many additional files to perform the robustness evaluation against di
 - **YOLOv4/YOLOv4-tiny:** How to evaluate YOLO
     - Download the darknet directory: https://github.com/AlexeyAB/darknet
     - Install the darknet executable into the darknet directory: https://pjreddie.com/darknet/install/
-    - Copy and paste into the darknet directory our dependencies: https://drive.google.com/drive/folders/187RnbPSwFhEOH5k1E4LgrEDFuMOY4qEI?usp=sharing
+    - Copy and paste into the darknet directory our dependencies (cfg and img_dir folders, and python and shell files): https://drive.google.com/drive/folders/187RnbPSwFhEOH5k1E4LgrEDFuMOY4qEI?usp=sharing
+    - Download the desired *MODEL* in paste it in the darknet directory (find it here): https://github.com/AlexeyAB/darknet#pre-trained-models
+    - How to launch the evaluation for the selected *MODEL* and *COCO_CONFIG*:
+        
+        ./darknet detector valid cfg/*COCO_CONFIG*.data cfg/*MODEL*.cfg *MODEL*.weights
+        python coco_eval.py $PATH_TO_INSTANCE_ANNOTATION$/instances_val2017.json ./results/coco_results.json bbox
+        
+    - *MODEL*: 
 
 ![image](https://user-images.githubusercontent.com/80038451/153758154-73f7ab7a-2776-49b5-b40d-81404302af9f.png)
 ![image](https://user-images.githubusercontent.com/80038451/153758166-71744e78-0b90-4896-ac32-347fa12f2c6f.png)
