@@ -180,6 +180,11 @@ We provide many additional files to perform the robustness evaluation against di
     - Follow the installation instruction: https://github.com/google/automl/tree/master/efficientdet#efficientdet
     - Download the desired model: https://github.com/google/automl/tree/master/efficientdet#2-pretrained-efficientdet-checkpoints
     - Download our dependencies and paste them into the automl directory: https://drive.google.com/drive/folders/1HJqgQIkNUqRtnuHqDmTfnBoPwh1lgaJ1?usp=sharing
+    - Create the "annotations" folder in the autml directory and paste "instances_val2017.json" and "captions_val2017.json" from MS-COCO dataset into it 
+    - **Launch EfficientDet Evaluation for all distortion type and level**:
+        - Modify the shell script "launch" to add yout directory configuration to indicate the **image_dir** path
+        - Run the following script:     ./launch.sh
+         
 
 
 ![image](https://user-images.githubusercontent.com/80038451/153758154-73f7ab7a-2776-49b5-b40d-81404302af9f.png)
