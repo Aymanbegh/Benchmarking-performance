@@ -199,7 +199,7 @@ We provide many additional files to perform the robustness evaluation against di
     - Create the "annotations" folder in the autml directory and paste "instances_val2017.json" and "captions_val2017.json" from MS-COCO dataset into it 
     - **Launch EfficientDet Evaluation for all distortion type and level**:
         - Modify the shell script "launch" to add yout directory configuration to indicate the **image_dir** path
-        - Run the following script:     ./launch.sh
+        - Run the following script:         ./launch.sh
          
 
 Evaluation results
@@ -207,7 +207,7 @@ Evaluation results
 Evaluation experiments are done with YOLOv4-tiny, YOLOv4, EfficientDet-D0, EfficientDet-D1, EfficientDet-D2, EfficientDet-D3, EfficientDet-D4 and Mask-RCNN models on GPU RTX 2080 SUPER. Here is, the mAP score of models acoording to distortion type and level (Level 0 corresponds to images non-distorted):
 ![image](https://user-images.githubusercontent.com/80038451/153758154-73f7ab7a-2776-49b5-b40d-81404302af9f.png)
 ![image](https://user-images.githubusercontent.com/80038451/153758166-71744e78-0b90-4896-ac32-347fa12f2c6f.png)
-To provide a better visualization, here is a bar 
+To better assess the impact of distortion on models performance, here is on the left a Bar graph that represents the mAP average of models according to all distortion type and level. On the right, a data distribution visualization including box and violin plots that provide more information about data composition:
 ![image](https://user-images.githubusercontent.com/80038451/154288132-5f1732d7-edc0-45f6-bb1e-bc27e94ff03b.png)
 
 
