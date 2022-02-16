@@ -120,7 +120,7 @@ The distorted images are  as the following tree structure:
         - outputFolder (line 45): as imgtrain_dist
 
       
-Evaluation results
+Evaluation protocols
 -----------------------------------
 
 We provide many additional files to perform the robustness evaluation against distortions of models **Mask-RCNN, EfficientDet, and YOLOv4**.
@@ -186,6 +186,8 @@ We provide many additional files to perform the robustness evaluation against di
         - Run the following script:     ./launch.sh
          
 
+Evaluation results
+-----------------------------------
 
 ![image](https://user-images.githubusercontent.com/80038451/153758154-73f7ab7a-2776-49b5-b40d-81404302af9f.png)
 ![image](https://user-images.githubusercontent.com/80038451/153758166-71744e78-0b90-4896-ac32-347fa12f2c6f.png)
