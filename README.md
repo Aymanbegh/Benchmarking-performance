@@ -253,15 +253,16 @@ Protocol to launch a costum training:
     - Copy and paste the desired **pre-trained models** in the darknet directory
     - Modify the coco2017.data in the data folder as follow:
 
-        classes= 80
-        train  = /home/beghdadi/darknet/data/train2017_d.txt
-        valid  = /home/beghdadi/darknet/data/val2017.txt
-        #valid = data/coco_val_5k.list
-        names = data/coco2017.names
-        backup = /home/beghdadi/darknet/backup/
-        eval=coco
+            classes= 80
+            train  = /home/beghdadi/darknet/data/train2017_d.txt
+            valid  = /home/beghdadi/darknet/data/val2017.txt
+            #valid = data/coco_val_5k.list
+            names = data/coco2017.names
+            backup = /home/beghdadi/darknet/backup/
+            eval=coco
         
     - Select the desired models to train into the script **launch_traind** and run it as follow:
+    
             ./launch_traind.sh
 
 - **To train your model on the original MS-COCO dataset:**
@@ -270,6 +271,7 @@ Protocol to launch a costum training:
 Here, evaluation results of our trained models robustness against each distortion type and level.
 ![image](https://user-images.githubusercontent.com/80038451/153755895-5503f06a-9465-4267-b3c9-e4df9f794dd7.png)
 ![image](https://user-images.githubusercontent.com/80038451/153755924-b7496789-4b34-46f8-92f9-a5e4379f28ab.png)
+
 Previous graphics are summarized in the following table to highlight the impact of data augmentation on robustness for each specific distortions:
 
 | Distortion <td colspan=5>Distortion level  <td colspan=1>mAP|
