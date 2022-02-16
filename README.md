@@ -1,18 +1,15 @@
 # Benchmarking-performance-of-object-detection-under-uncontrolled-environment
 
 Here is an original strategy of image distortion generation applied to the MS-COCO dataset that combines some local and global distortions to reach a better realism. We have shown that training with this distorted dataset improves the robustness of models by 30% approximately.
-- [Overview](https://github.com/Aymanbegh/Benchmarking-performance#overview): ezf
-- [Image Distortions](https://github.com/Aymanbegh/Benchmarking-performance#image-distortions): qzefq
-- [Requirements](https://github.com/Aymanbegh/Benchmarking-performance#requirements): zarzr
-- [Distorted dataset generation](https://github.com/Aymanbegh/Benchmarking-performance#distorted-dataset-generation): aefafe
-- [Evaluation protocols](https://github.com/Aymanbegh/Benchmarking-performance#evaluation-protocols): aefafe
-- [Evaluation results](https://github.com/Aymanbegh/Benchmarking-performance#evaluation-results): aefafe
-- [Training results](https://github.com/Aymanbegh/Benchmarking-performance#training-results): aefafe
+- [Overview](https://github.com/Aymanbegh/Benchmarking-performance#overview): brief presentation of this framework evaluation of robustness
+- [Image Distortions](https://github.com/Aymanbegh/Benchmarking-performance#image-distortions): presents the main concept about image distortion
+- [Requirements](https://github.com/Aymanbegh/Benchmarking-performance#requirements): gives global dependencies information and links
+- [Distorted dataset generation](https://github.com/Aymanbegh/Benchmarking-performance#distorted-dataset-generation): provides a tutorial about the distorted dataset generation
+- [Evaluation protocols](https://github.com/Aymanbegh/Benchmarking-performance#evaluation-protocols): explains the evaluation protocol and how to launch it for each models (Mask-RCNN, EfficientDet and YOLOv4) 
+- [Evaluation results](https://github.com/Aymanbegh/Benchmarking-performance#evaluation-results): shows results of ours evaluations
+- [Training results](https://github.com/Aymanbegh/Benchmarking-performance#training-results): explains how to perform a training through YOLOv4 method (YOLOv4 or YOLOv4-tiny) and how to evaluate the robustness of the trained model.
 
-
-
-
-
+**Codes of evaluation and training tasks are fully provided as well as distorted dataset.**
 
 
 Overview
