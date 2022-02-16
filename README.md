@@ -51,8 +51,8 @@ Requirements
         - Link: https://drive.google.com/file/d/1aCWSAA0fA1jb6-5LFlin45tm1N7A53Ai/view?usp=sharing
 - **Requirements for the models to evaluate**
 - **YOLOv4-tiny pre-trained:**
-    - Original COCO dataset: https://drive.google.com/drive/folders/10s4mmJ1rkWGwrhveU92-h3cb03wA0VfD?usp=sharing
-    - Distorted COCO Dataset: https://drive.google.com/drive/folders/18anC53sr_SkDl7qMPn9iWcM3ub1p6d1D?usp=sharing
+    - Trained on original COCO dataset: https://drive.google.com/drive/folders/10s4mmJ1rkWGwrhveU92-h3cb03wA0VfD?usp=sharing
+    - Trained on distorted COCO Dataset: https://drive.google.com/drive/folders/18anC53sr_SkDl7qMPn9iWcM3ub1p6d1D?usp=sharing
 
 Distorted dataset generation
 -----------------------------------
@@ -217,7 +217,9 @@ To better assess the impact of distortion on models performance, here is on the 
 Training results
 -----------------------------------
 Training experiments are done with the YOLOv4-tiny model on GPU RTX 2080 SUPER. Find all dependencies to train your model with our distorted train set here:
+- 
 
+Here, evaluation results of our trained models robustness against each distortion type and level.
 ![image](https://user-images.githubusercontent.com/80038451/153755895-5503f06a-9465-4267-b3c9-e4df9f794dd7.png)
 ![image](https://user-images.githubusercontent.com/80038451/153755924-b7496789-4b34-46f8-92f9-a5e4379f28ab.png)
 Previous graphics are summarized in the following table to highlight the impact of data augmentation on robustness for each specific distortions:
