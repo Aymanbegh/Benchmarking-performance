@@ -142,6 +142,13 @@ We provide many additional files to perform the robustness evaluation against di
             names = data/coco.names     => give path to file that contain all category names
             backup = /path_to/darknet/backup/ => give path to folder where to save trained model
             eval=coco
+            
+    - **How to launch the evaluation**: for the yolov4 model
+    
+            ./launch_eval_yolov4.sh
+            contains by exemple: ./darknet detector valid cfg/coco_comp1.data cfg/yolov4.cfg yolov4.weights
+            
+        - **cfg/coco_comp1.data**: where "coco_comp1" is the data file that include path information of distorted images through compression 
 
 ![image](https://user-images.githubusercontent.com/80038451/153758154-73f7ab7a-2776-49b5-b40d-81404302af9f.png)
 ![image](https://user-images.githubusercontent.com/80038451/153758166-71744e78-0b90-4896-ac32-347fa12f2c6f.png)
