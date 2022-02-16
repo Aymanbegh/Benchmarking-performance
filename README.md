@@ -167,6 +167,13 @@ We provide many additional files to perform the robustness evaluation against di
 - **Mask-RCNN:** How to evaluate the Mask-RCNN model
 
 
+- **EfficientDet:** How to evaluate the EfficientDet model
+    - Download directory from: https://github.com/google/automl/tree/master/efficientdet
+    - Follow the installation instruction: https://github.com/google/automl/tree/master/efficientdet#efficientdet
+    - Download the desired model: https://github.com/google/automl/tree/master/efficientdet#2-pretrained-efficientdet-checkpoints
+    - Download our dependencies and paste them into the automl directory: https://drive.google.com/drive/folders/1HJqgQIkNUqRtnuHqDmTfnBoPwh1lgaJ1?usp=sharing
+
+
 ![image](https://user-images.githubusercontent.com/80038451/153758154-73f7ab7a-2776-49b5-b40d-81404302af9f.png)
 ![image](https://user-images.githubusercontent.com/80038451/153758166-71744e78-0b90-4896-ac32-347fa12f2c6f.png)
 
