@@ -275,7 +275,7 @@ Here, evaluation results of our trained models robustness against each distortio
 
 Previous graphics are summarized in the following table to highlight the impact of data augmentation on robustness for each specific distortions and for specified levels:
 
-|Distortion Type| 2  | 4 | 6 | 8 | 10 |mAP Average | 
+|Distortion Type| 2  | 4 | 6 | 8 | 10 |mAP Average per distortion| 
 | ------ | :------: | :------: | :------: |  :------: | :------: | :------: |
 | **Noise** | 9.58% | 22.3% |37.9% | 80.3% | 114% | 47.2% |
 | **Contrast** | -0.54% | 1.8% | 2.47% | 3.23% | 5.71% | 1.99% |
