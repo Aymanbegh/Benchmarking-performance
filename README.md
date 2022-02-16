@@ -138,7 +138,8 @@ We provide many additional files to perform the robustness evaluation against di
     - **$PATH_TO_INSTANCE_ANNOTATION$**: path to the directory containing annotation from COCO
     - **img_dir directory**: contains all text file with distorted images paths according to the distortion type and level
         - val2017: contain path for the original validation set from MS-COCO => val2017.txt
-        - val2017_$distortion_name$$level$: by exemple for the distortion noise of level 2 => val2017_noise2.txt    
+        - val2017_$distortion_name$$level$: by exemple for the distortion noise of level 2 => val2017_noise2.txt 
+        - **Change the path to images of eauc text file according to your directory** 
     - **COCO_CONFIG**: data file that contains all necessary information such as:
         
             classes= 80 => define number of class
