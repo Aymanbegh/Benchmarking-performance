@@ -159,6 +159,8 @@ We provide many additional files to perform the robustness evaluation against di
             contains by exemple: ./darknet detector valid cfg/coco_comp1.data cfg/yolov4-tiny.cfg yolov4-tiny.weights
             
         - **cfg/coco_comp1.data**: where "coco_comp1" is the data file that include path information of distorted images through compression 
+- **Mask-RCNN:** How to evaluate the Mask-RCNN model
+
 
 ![image](https://user-images.githubusercontent.com/80038451/153758154-73f7ab7a-2776-49b5-b40d-81404302af9f.png)
 ![image](https://user-images.githubusercontent.com/80038451/153758166-71744e78-0b90-4896-ac32-347fa12f2c6f.png)
