@@ -188,7 +188,7 @@ We provide many additional files to perform the robustness evaluation against di
     - Download our dependencies and paste it into the mask-rcnn directory: https://drive.google.com/drive/folders/1P9JLeSzgsNDazkz0vtvgE5cST8Xs5Ezc?usp=sharing
     - Run the following command:
 
-        python3 samples/coco/coco.py evaluate --dataset=/home/beghdadi/COCO/  --model=coco
+            python3 samples/coco/coco.py evaluate --dataset=/home/beghdadi/COCO/  --model=coco
 
 
 - **EfficientDet:** How to evaluate the EfficientDet model
@@ -204,29 +204,23 @@ We provide many additional files to perform the robustness evaluation against di
 
 Evaluation results
 -----------------------------------
-
+Evaluation experiments are done with YOLOv4-tiny, YOLOv4, EfficientDet-D0, EfficientDet-D1, EfficientDet-D2, EfficientDet-D3, EfficientDet-D4 and Mask-RCNN models on GPU RTX 2080 SUPER. Here is, the mAP score of models acoording to distortion type and level (Level 0 corresponds to images non-distorted):
 ![image](https://user-images.githubusercontent.com/80038451/153758154-73f7ab7a-2776-49b5-b40d-81404302af9f.png)
 ![image](https://user-images.githubusercontent.com/80038451/153758166-71744e78-0b90-4896-ac32-347fa12f2c6f.png)
+To provide a better visualization, here is a bar 
+![image](https://user-images.githubusercontent.com/80038451/154288132-5f1732d7-edc0-45f6-bb1e-bc27e94ff03b.png)
 
-![image](https://user-images.githubusercontent.com/80038451/154083675-382718b7-4437-4dd9-b2da-626ad41bc9d9.png)
-
-
-![image](https://user-images.githubusercontent.com/80038451/154107306-3cb6642c-76a0-4628-a8c2-02b909e93c62.png)
 
 
 
 
 Training results
 -----------------------------------
-Training experiments done with the YOLOv4-tiny model on GPU RTX 2080 SUPER. Find all dependencies to train your model with our distorted train set here:
+Training experiments are done with the YOLOv4-tiny model on GPU RTX 2080 SUPER. Find all dependencies to train your model with our distorted train set here:
 
 ![image](https://user-images.githubusercontent.com/80038451/153755895-5503f06a-9465-4267-b3c9-e4df9f794dd7.png)
 ![image](https://user-images.githubusercontent.com/80038451/153755924-b7496789-4b34-46f8-92f9-a5e4379f28ab.png)
 Previous graphics are summarized in the following table to highlight the impact of data augmentation on robustness for each specific distortions:
-
-| | Noise| Contrast| Compression | Rain  | Haze |Blur | Defocus  | Local Blur | Local Defocus | Backlight illumination   | 
-| ------ | :------: | :------: | :------: |  :------: | :------: | :------: | :------: |  :------: | :------: | :------: | 
-| **Average** | 47.2% | 1.99% | 4.26%  | 61.7% | 15.8% | 86.3% | 16.5% | 39.8% | 17.2% | 24.1%|
 
 | Distortion <td colspan=5>Distortion level  <td colspan=1>mAP|
 |Type| 2  | 4 | 6 | 8 | 10 |Average | 
